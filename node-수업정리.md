@@ -37,3 +37,51 @@
      - npm을 통해서 node_module에서 설치해서 사용하는 모듈
      - 로컬 배포 
      - 원격 배포
+
+6. npmjs.com npm registry에 패키지 배포
+
+   - 사용자 등록
+   - 배포
+     - $ npm adduser
+     - $ npm publish
+
+7. javascript module system
+
+   - common.js (require.js)
+
+     1. require('...') 호출
+
+        - module.exports = {}
+
+        - exports = module.exports
+
+        - module.exports = {
+
+          ...
+          }
+
+          스타일로 코드 작성시, module.exports변수가, 기존에 require함수가 만들어준 객체가 아닌, 새로운 객체를 참조한다.
+
+          ->  exports가 가리키는 레퍼런스와 module.exports가 가리키는 레퍼런스가 달라짐
+
+          
+
+     2. 모듈 안의 코드 실행
+
+     3. return module.exports
+
+     
+
+   2. amd
+   3. ES6(es2015, es harmony) module 지원 (표준)
+
+8. helloweb-ex01 : 맨바닥에서 웹어플리케이션 만들어 보기
+
+   - app01 : based on http (core module)
+   - app02 : based on http, fs (core module)
+   - app03 : based on connect, serve-static (npm package)
+   - app04 : basedon connect, serve-static, connect-route (npm package)
+
+9. helloweb-ex02: express 프레임워크 기반의 웹어플리케이션 만들기
+
+   
