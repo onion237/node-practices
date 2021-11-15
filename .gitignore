@@ -1,0 +1,15 @@
+**/node_modules
+
+## eclipse
+**/.classpath
+**/.project
+**/.settings
+**/target
+
+## intelli J
+**/.ide
+**/.iml
+**/build
+
+## mac
+**/DS_Store
